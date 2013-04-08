@@ -1,0 +1,51 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+table{
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.sisu{
+  width: 150px;
+}
+
+.even{
+  background-color: gray;
+}
+.odd{
+  background-color: white;
+}
+  
+.name_rem, .name{
+  color: green;
+}
+.name{
+  font-size:2em;
+}
+.tags{
+  font-family: Courier New;
+  font-size:2em;
+  color: pink;
+  background-color: green;
+  padding: 5px;
+}
+
+#commenters, #add_comment{
+  float: left;
+  margin-left: 15px;
+}
+
+.links{
+  margin-top: -30px;
+  background-color: pink;
+  font-size:1.5em;
+  opacity: .7;
+}
+#notice{
+  margin-top: 30px;
+  background-color: white;
+  color: black;
+  padding: 5px;
+  width: 500px;
+}

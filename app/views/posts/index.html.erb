@@ -1,0 +1,53 @@
+<h1>Postituste nimekiri</h1>
+
+<table>
+  <tr>
+    <th>nimi</th>
+    <th>e-mail</th>
+    <th>pealkiri</th>
+    <th class="sisu">sisu</th>
+    <th>kommentaarid</th>
+   
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @posts.each do |post| %>
+<% post.id.even? %>
+  <tr class ="even">
+<% post.id.odd? %>
+  <tr class ="odd">
+
+    <td><%= post.name %></td>
+    <td><%= post.author_email %></td>
+    <td><%= post.title %></td>
+    <td><%= post.content %></td>
+    <td class="komm"><%=  post.comments.length %></td>
+   
+    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <!---->
+    <% if post.closure %>
+        <td><%= button_to 'Close commenting', closeCommenting_post_path(post), method: :closeCommenting %></td>
+    <% else %>
+        <td><%= button_to 'Open commenting', closeCommenting_post_path(post), method: :closeCommenting %></td>
+    <% end %>
+     <!----> 
+     
+    <% if post.comments.length %>
+        <td><%= button_to 'Kustuta kõik kommentaarid', post, method: :deleteAllComments,
+                                                        data: { confirm: 'Kas tõesti tahad kõik kommentaarid kustutada???' } %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
+<br />
+<div class="links">
+<%= link_to 'New Post', new_post_path %>
+</div>
+
