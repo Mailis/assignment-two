@@ -31,16 +31,12 @@
 
 <div id="commenters">
 <h2>Comments</h2>
-<% if @post.comments_closure  %>
-  <%= render @post.comments_closure %>
-<% else %>
-  <%= 0 %>
-<% end %>
+<%= render @post.comments %>
 </div>
 <div id="add_comment">
 <p id="notice"><%= notice %></p>
 <!-- kui kommenteerimine pole suletud, siis saab kommentaari lisada -->
-<% if @post.comments_closure %> 
+<% if @post.closure %> 
    <h2>Add a comment:</h2>
    <%= render "comments/form" %>
 <% end %> 

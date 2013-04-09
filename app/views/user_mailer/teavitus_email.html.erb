@@ -8,9 +8,13 @@
     <p>
       Sinu e-mail on <%= @post.author_email %>.<br/>
     </p>
+    
+    <p>
+      Sinu postitusele <%= @post.title %> saabunud kommentaar:<br/>
+    </p>
     <p><i><%= @comment.created_at %></i></p>
     <p>
-     Kasutaja <%= @comment.commenter %> kommentaar:
+      Kasutaja <%= @comment.commenter %> kommenaar:
     </p>
     <p><i><%= @comment.body %></i></p>
   </body>

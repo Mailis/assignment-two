@@ -1,2 +1,20 @@
 module PostsHelper
+  #put 'closeCommenting' => :closeCommenting
+
+  def join_tags(post)
+    post.tags.map { |t| t.name }.join(", ")
+  end
+
+  
+  # PUT /posts/1
+  # PUT /posts/1.json
+  def closeCommenting
+    @post = Post.find(params[:id])
+    post.closure = false
+
+    respond_to do |format|
+      format.html { redirect_to posts_url }
+      format.json { head :no_content }
+    end
+  end
 end
