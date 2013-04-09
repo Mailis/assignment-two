@@ -1,0 +1,29 @@
+https://help.github.com/articles/generating-ssh-keys
+
+
+
+
+
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDFOM7aHHLr9KyoDK7TSn2lu9zy2EuDEaGkTESDC9iffV+f18YMDBgsjRcXdUAedhKZKN4Vc/k6jwN3oFO/hsvQMTEU4XpIcGRe3ECAEeL34y/+TSoG/ZYKx4ugICmYBtCqtyIpD05ZZ/kEgvv827M9q2D5xVWeBwXxWw8Hd2uNkkEKpWE0ksSSWhYEN9B5hyhXGRFJuRdUSdazwLe92c4vCP1mwqKVstWpSWFAVVVTYeO2bEvR8m039lUtoxfjR+JhuPmEp1YEtsXYDQHMfRihrrDozAfOWMacFlol4eAx6ViW8F00F+L+ZkJmgYPf6xeAiVIWr8D/b6NU6Gt6EBq9 maiilu@hotmail.com
+
+
+
+
+
+
+The key fingerprint is:
+a3:b0:81:d5:f1:66:1f:6a:7a:72:97:0b:eb:e6:e1:da maiilu@hotmail.com
+The key's randomart image is:
++--[ RSA 2048]----+
+|      .          |
+|     . o         |
+|    . . + .      |
+|   o   o o .     |
+|  . o   S .      |
+|     + + . .     |
+|    . + = o      |
+|       *.= .     |
+|      .=E .      |
++-----------------+
+

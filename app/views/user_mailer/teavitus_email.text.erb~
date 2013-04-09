@@ -1,6 +1,0 @@
-Tere, <%= @post.name %>!
-===============================================
-Sinu e-mail on <%= @post.author_email %>.
- 
-Kommentaar:
-<%= @comment %>

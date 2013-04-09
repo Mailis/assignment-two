@@ -1,3 +1,0 @@
-<%= link_to "close", [post.closeCommenting, post],
-               :confirm => 'Are you sure?',
-               :method => :put %>
