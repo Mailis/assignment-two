@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Tere, <%= @post.name %>!</h1>
+    <p>
+      Sinu e-mail on <%= @post.author_email %>.<br/>
+    </p>
+    
+    <p>
+      Sinu postitusele <%= @post.title %> saabunud kommentaar:<br/>
+    </p>
+    <p><i><%= @comment.created_at %></i></p>
+    <p>
+      Kasutaja <%= @comment.commenter %> kommenaar:
+    </p>
+    <p><i><%= @comment.body %></i></p>
+  </body>
+</html>
