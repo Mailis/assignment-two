@@ -19,7 +19,11 @@ test:
   timeout: 5000
 
 production:
+<<<<<<< HEAD
   adapter: mysql
+=======
+  adapter: mysql2
+>>>>>>> 2af3e0302d18cf65de9b47e23d874426511b6f70
   encoding: utf8
   database: mailis_blog_production 
   pool: 5
